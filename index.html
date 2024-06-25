@@ -25,10 +25,7 @@
     />
     <link rel="stylesheet" href="./sb-common-assets/fonts.css" />
 
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-  <base href="/hasuradev/">
+    <link href="./sb-manager/runtime.js" rel="modulepreload" />
 
     
     <link href="./sb-addons/storybook-core-server-presets-0/common-manager-bundle.js" rel="modulepreload" />
@@ -52,12 +49,11 @@
     <link href="./sb-addons/interactions-9/manager-bundle.js" rel="modulepreload" />
        
 
-  <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="sotaycophieu">
-  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+    <style>
+      #storybook-root[hidden] {
+        display: none !important;
+      }
+    </style>
 
     
   </head>
